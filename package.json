@@ -47,5 +47,10 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/Roboto"
+    ]
   }
 }

@@ -8,7 +8,10 @@ import {
   Footer,
   FooterContentCol,
   FooterContentAction,
-  FooterTitle,
+  FooterText,
+  FooterTextPlayer,
+  FooterContentPlayers,
+  FooterPlayerAction,
 } from './Game.styles';
 
 export const Game = () => (
@@ -49,9 +52,18 @@ export const Game = () => (
       </RowGameView>
     </Container>
     <Footer>
-      <FooterContentCol />
+      <FooterContentCol>
+        <FooterPlayerAction />
+        <FooterContentPlayers>
+          <FooterTextPlayer>O</FooterTextPlayer>
+        </FooterContentPlayers>
+        <FooterPlayerAction />
+        <FooterContentPlayers>
+          <FooterTextPlayer>X</FooterTextPlayer>
+        </FooterContentPlayers>
+      </FooterContentCol>
       <FooterContentAction>
-        <FooterTitle>Reset</FooterTitle>
+        <FooterText>Reset</FooterText>
       </FooterContentAction>
       <FooterContentCol />
     </Footer>

@@ -43,7 +43,9 @@ export const Footer = styled.View`
 
 export const FooterContentCol = styled.View`
   flex: 0.33;
+  flex-direction: row;
   justify-content: center;
+  text-align: center;
 `;
 
 export const FooterContentAction = styled.TouchableOpacity`
@@ -51,9 +53,25 @@ export const FooterContentAction = styled.TouchableOpacity`
   justify-content: center;
 `;
 
-export const FooterTitle = styled.Text`
+export const FooterText = styled.Text`
   font-family: ${MEDIUM};
   color: ${WHITE};
-  font-size: 15;
+  font-size: 20;
   text-align: center;
+`;
+
+export const FooterContentPlayers = styled.View`
+  flex: 0.2;
+  justify-content: center;
+`;
+
+export const FooterTextPlayer = styled.Text`
+  font-family: ${MEDIUM};
+  color: ${WHITE};
+  font-size: 20;
+  text-align: center;
+`;
+
+export const FooterPlayerAction = styled.View`
+  flex: 0.3;
 `;
